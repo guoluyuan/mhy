@@ -28,7 +28,7 @@ def get_goods_info(goods_id):
         # 商品名
         goods_name = res['goods_name']
         # 商品类型type 1为实物，2为虚拟产品(不需要收货地址)
-        goods_type = res['type']
+        goods_type = res['type']-1
         goods_type_list = ["实物", "虚拟产品"]
         # 兑换价格
         price = res['price']
