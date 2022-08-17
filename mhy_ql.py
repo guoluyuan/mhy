@@ -112,13 +112,7 @@ def exchange_goods(goods_id, address_id, goods_type, uid=None):
     # print(data[goods_type])
     res = requests.post(url=exchange_goods_url, headers=headers, data=json.dumps(data[goods_type])).json()
     print(res)
-    send_qq_result(res)
 
-
-def send_qq_result(res):
-    if res['retcode'] not in [-2102, -2108,-2106]:
-        msg = res
-        requests.get(f"http://qqbot.guogai.ltd/send_private_msg?user_id=2927809848&message={msg}")
 
 
 if __name__ == '__main__':
