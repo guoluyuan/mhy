@@ -5,4 +5,4 @@
 # 每个值用@@隔开
 # 例子goods_id@@uid@@ck
 #本地使用
-#手动填写,goods_id,uid,ck
+# 手动填写,goods_id,uid,ck
